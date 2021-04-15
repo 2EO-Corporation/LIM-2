@@ -159,9 +159,58 @@ nav {
     align-items: center;
     flex-direction: column;
     
-
 }
 
+/* ---- FOOTER BEGYNNER HER ----- */
+/* ====== FOOTER ========*/
+.Footer{
+    grid-column: 1/span 4;
+    grid-row: 7;
+}
+
+.FooterFlexbox{ /*Dette er hele boksen med fotter*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3px;
+    color: black;
+    background-color:#6c757d;
+    opacity: 0.8; /* gjør området delvis gjennomsiktig*/
+    height: 80vh;
+    align-items: center;
+    margin-top: 100px;
+
+    /*tekst*/
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.FooterTekst{ /* venstre boks ("ta kontakt"-boksen)*/
+    display: flex;
+    padding: 30px;
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+    line-height: 4px; /* linjeavstand*/
+}
+
+.FooterTekst a{ 
+    color: black; /* endrer "hyperlink-fargen" til svart*/
+}
+
+.vertikalLinje{ /* linjene mellom infomasjonen i fotter*/
+    border-left: 2px solid black;
+    height: 200px;
+    position:absolute;
+    left: 50%; /* plasserer linjen i midten av boksen*/
+    }
+
+.ikon{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
 
 
 
