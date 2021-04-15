@@ -1,0 +1,123 @@
+/* -----   En CSS for bildene til hoveddel -- */
+
+/* Tilpasset pc*/
+@media only screen and (max-width: 5200px){
+    /* -- Her setter jeg bilde på siden -- */
+    #fotball .informasjon-bilde {
+        background-image: url(bilder/legit/fotball.png);
+    }
+
+    #dans .informasjon-bilde{
+        background-image: url(bilder/legit/dans.png);
+    }
+
+    #rugby .informasjon-bilde{
+        background-image: url(bilder/legit/rugby.png);
+    }
+
+    #hockey .informasjon-bilde{
+        background-image: url(bilder/legit/hockey.jpeg);
+    }
+
+    #turn .informasjon-bilde{
+        background-image: url(bilder/legit/turn.png);
+    }
+
+    #innebandy .informasjon-bilde{
+        background-image: url(bilder/legit/innebandy.png);
+    }
+    
+    #taekwondo .informasjon-bilde{
+        background-image: url(bilder/legit/taekwondo.png);
+    }
+
+    #crossfit .informasjon-bilde{
+        background-image: url(bilder/legit/crossfit.png);
+    }
+
+    #håndball .informasjon-bilde{
+        background-image: url(bilder/legit/håndball.png);
+    }
+    #basket .informasjon-bilde{
+        background-image: url(bilder/legit/basket.png);
+    }
+
+    #klatring .informasjon-bilde{
+        background-image: url(bilder/legit/klatring.png);
+    }
+    #kunstløp .informasjon-bilde{
+        background-image: url(bilder/legit/kunstløp.png);
+    }
+    #tennis .informasjon-bilde{
+        background-image: url(bilder/legit/tennis.png);
+    }
+    #friidrett .informasjon-bilde{
+        background-image: url(bilder/legit/friidrett.png);
+    }
+
+    #vektløft .informasjon-bilde{
+        background-image: url(bilder/legit/vektløft.png);
+    }
+}
+
+/* ---  tilpasset Ipad ------ */
+@media only screen and (max-width: 800px){
+   
+
+    #fotball .informasjon-bilde {
+        background-image: url(bilder/legit/fotball.png);
+    }
+
+    #dans .informasjon-bilde{
+        background-image: url(bilder/legit/dans.png);
+    }
+
+    #rugby .informasjon-bilde{
+        background-image: url(bilder/legit/rugby.png);
+    }
+
+    #hockey .informasjon-bilde{
+        background-image: url(bilder/legit/hockey.jpeg);
+    }
+
+    #turn .informasjon-bilde{
+        background-image: url(bilder/legit/turn.png);
+    }
+
+    #innebandy .informasjon-bilde{
+        background-image: url(bilder/legit/innebandy.png);
+    }
+    
+    #taekwondo .informasjon-bilde{
+        background-image: url(bilder/legit/taekwondo.png);
+    }
+
+    #crossfit .informasjon-bilde{
+        background-image: url(bilder/legit/crossfit.png);
+    }
+
+    #håndball .informasjon-bilde{
+        background-image: url(bilder/legit/håndball.png);
+    }
+    #basket .informasjon-bilde{
+        background-image: url(bilder/legit/basket.png);
+    }
+
+    #klatring .informasjon-bilde{
+        background-image: url(bilder/legit/klatring.png);
+    }
+    #kunstløp .informasjon-bilde{
+        background-image: url(bilder/legit/kunstløp.png);
+    }
+    #tennis .informasjon-bilde{
+        background-image: url(bilder/legit/tennis.png);
+    }
+    #friidrett .informasjon-bilde{
+        background-image: url(bilder/legit/friidrett.png);
+    }
+
+    #vektløft .informasjon-bilde{
+        background-image: url(bilder/legit/vektløft.png);
+    }
+
+}

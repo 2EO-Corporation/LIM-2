@@ -1,0 +1,170 @@
+html{
+    height: 600vh;
+   
+}
+
+
+
+/* ------HEADER VIDEO----- */
+
+
+.video-header, .video-header , .video-header  {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+video{
+    width: 100vw;
+    height: 70vh;
+    top: 0;
+    left: 0; 
+}
+
+.video-header, video {
+    
+    object-fit: cover;
+}
+
+/*  slutt på video header*/
+
+
+/* RANDOM NAVBAR*/
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    top: 2px; /* Position the navbar at the top of the page */
+    width: 100vw; /* Full width */
+    
+}
+
+nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+  
+/* Links inside the navbar */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    font-size: 25px;
+    position: sticky;
+}
+
+  
+/* Change background on mouse-over */
+#navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+ /*RANDOM NAVBAR SLUTTER*/
+ 
+/*her kommer overskriften*/
+#overskrift{
+    display: flex;
+    justify-content: center;
+    margin: 0  auto;
+    margin: 15vh;
+}
+
+/* --- En kort intro type ---*/
+.så-langt{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 2.2;
+    
+}
+
+/*------ -------------nå begynner jeg på de kortene--------------------*/
+
+
+
+/*her er sånn genrell still osv.*/
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: white 1px solid;
+    text-align: center;
+    color: black;
+}
+
+.card a{
+    color: black;   
+}
+
+/*-- nth-child (tall) referer til hvilken "objekt" i div boksen skal endres. Må bruke denne slik at bildene blir
+ påvirket, ellers kan ikke man skrive width/height i ".card" som ligger over -----*/
+.card :nth-child(1){
+    width: 100%;
+    height: 60%; 
+}
+  
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 30px 30px 10px rgba(0,0,0,0.2);
+}
+
+
+#galleri-idrett {
+    display: grid;
+    
+}
+
+#galleri-plassering{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ------ HER begynner jeg på hoveddelen ----- */
+
+.informasjon{
+    display: grid;
+    border: solid white 2px;
+    overflow: hidden;
+}
+.informasjon-bilde{
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
+    border: black 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#informasjon-plassering{
+    display: grid;
+    row-gap: 10vh;
+}
+
+
+.informasjon-tekst{
+    
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+
+
+
+
+
+
