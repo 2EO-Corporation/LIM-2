@@ -1,0 +1,255 @@
+/* =========== Grids ============*/
+
+/* fargekoder
+
+1) #6c757d
+2) #adb5bd
+3)ced4da
+
+*/
+
+html,body{ /* fjerner irriterende hvit kant på innhold*/
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 25vh 10vh auto 80vh auto auto auto;
+
+
+}
+
+.header{
+    grid-column: 1 / span 4; 
+    grid-row: 1;
+    background-color:#6c757d;
+    padding: 20px;
+    margin: auto 0;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+nav{
+    grid-column: 1/span 4;
+    grid-row: 2;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    top: 0;
+    padding: 10px;
+    margin-top: 30px;
+    position: sticky;
+}
+
+nav ul { 
+    list-style-type: none; /* fjerner kulepunkt som er standard for lister*/
+    overflow: hidden; /* styrer hva som skjer med innhold som er for stort til å passe inn i et område. "hidden" forteller at innhold som ikke får plass i "boksen" blir skjult/klippet vekk*/
+}
+
+nav li { 
+    float: right; /* plasserer listen til venstre*/
+    
+}
+  
+nav li a { /* css for hvert element "li" refirerer til listeelementene i listen*/
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /* Top = 14px, bunn =16px */
+    text-decoration: none;
+   
+}
+  
+nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
+    background-color: rgb(168, 164, 164);
+}
+
+
+/*=========INTRODUKSJON============*/
+
+#intro{
+    grid-column: 2/span 3 ;
+    grid-row: 3;  
+    width: 50vw;
+    
+    border: solid black 3px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    /*innhold*/
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+    /*tekst*/
+    text-align: center;
+    line-height: 1;
+    font-size: 18px;
+}
+
+/*=======HOVEDDEL:==========*/
+
+/* =========== Del 1- kort forklaring + bilde ======== */
+
+.hoveddel-1{
+    grid: 1/span 4;
+    grid-row: 4;
+    display: flex;
+
+    margin-bottom: 100px;
+    width: 100vw;
+
+    /* innhold*/
+    align-items: center;
+    justify-content: center;
+
+    
+    /*bakgrunn*/
+    background-color: rgb(58, 57, 57);
+    background-image: url(bilder/barn-takker-for-kampen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(50%); /* legger på grått filter på bildet. gir bedre lesbarhet*/
+    opacity: 0.8; /* gjør bilde mindre tydelig.*/
+}
+
+
+.tekst-hoveddel-1{ /* hvit overlay med tekst*/
+    display: flex;
+    margin: auto 0;
+    width: 600px;
+    padding: 50px;
+    line-height: 2;
+    border-radius: 5px;
+
+    background-color: white;
+    opacity: 0.7; 
+}
+    
+     
+/* ========== DEL- 2 hva er bakgrunnen for LIM ============*/ 
+/* delte innholdet inn i to grid bokser. Den ene med tekst og den andre med bilde. */
+
+.hoveddel-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
+    grid-column: 1/span 2; 
+    grid-row: 5;
+    background-color: gray;
+    padding: 30px;
+
+    text-align: center;
+
+}
+
+.tekst-hoveddel-2{ /* tekst flexbox (første "boks"). */
+    display: flex;
+    margin: 80px;
+    padding: 20px;
+    text-align: start;
+
+    line-height: 2;
+    border: black solid 2px;
+    text-decoration: none;   
+}
+
+.hoveddel-2-bilde{ /* bilde (andre "boks"*/
+    display: flex;
+    grid-column:  3/ span 4;
+    grid-row: 5;
+    background-color:grey;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======== DEl 3=======*/
+
+.hoveddel-3{
+    grid-column: 1/span 2;
+    grid-row: 6;
+    background-color:rgb(173, 171, 171);
+    padding: 30px;
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+.tekst-hoveddel-3{ /* tekst flexbox (første "boks"). */
+    display: flex;
+    padding: 20px;
+    text-align: start;
+
+    line-height: 2;
+    border: black solid 2px;
+    text-decoration: none;   
+}
+
+.hoveddel-3-bilde{ /* bilde (andre "boks"*/
+    display: flex;
+    grid-column:  3/ span 4;
+    grid-row: 6;
+    margin-top: 100px;
+    background-color:rgb(173, 171, 171);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* ====== FOOTER ========*/
+.Footer{
+    grid-column: 1/span 4;
+    grid-row: 7;
+}
+
+.FooterFlexbox{ /*Dette er hele boksen med fotter*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3px;
+    color: black;
+    background-color:#6c757d;
+    opacity: 0.8; /* gjør området delvis gjennomsiktig*/
+    height: 80vh;
+    align-items: center;
+    margin-top: 100px;
+
+    /*tekst*/
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.FooterTekst{ /* venstre boks ("ta kontakt"-boksen)*/
+    display: flex;
+    padding: 30px;
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+    line-height: 4px; /* linjeavstand*/
+}
+
+.FooterTekst a{ 
+    color: black; /* endrer "hyperlink-fargen" til svart*/
+}
+
+.vertikalLinje{ /* linjene mellom infomasjonen i fotter*/
+    border-left: 2px solid black;
+    height: 200px;
+    position:absolute;
+    left: 50%; /* plasserer linjen i midten av boksen*/
+    }
+
+.ikon{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
