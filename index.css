@@ -1,0 +1,335 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10;
+}
+
+.container{
+    display: grid;
+
+    grid-template-columns: 15vw 23vw 23vw 23vw 15vw;
+    grid-template-rows: 15vh 85vh 100vh 30vh 60vh 20vh 40vh 40vh auto;
+}
+
+/*--------------CSS NAVBAR START--------------*/
+.HeaderGrid{
+    grid-column: 1 / span 5; 
+    grid-row: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.HeaderGrid ul { 
+    list-style-type: none; /* fjerner kulepunkt som er standard for lister*/
+    overflow: hidden; /* styrer hva som skjer med innhold som er for stort til å passe inn i et område. "hidden" forteller at innhold som ikke får plass i "boksen" blir skjult/klippet vekk*/
+}
+
+.HeaderGrid li { 
+    float: left; /* plasserer listen til venstre*/
+}
+  
+.HeaderGrid li a { /* css for hvert element "li" refirerer til listeelementene i listen*/
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /* Top = 14px, bunn =16px */
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.HeaderGrid li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
+    background-color: grey;
+    
+}
+
+/*-----------CSS TIL NAVBAR SLUTT-----------*/
+
+
+
+/*------------- CSS TIL STARTBILDE START---------------*/
+ .LogoForsideBakgrunn{
+    grid-column: 1/ span 5; 
+    grid-row: 1 / span 2;
+    overflow: hidden;
+
+    background-image: url(bilder/FORSIDEBILDE.jpg); /*BAKGRUNNSBILDE*/
+    background-size: cover;  
+ }
+
+ .LogoForsideTekst1{
+    color: black; /*TEKST*/
+    font-size: 60px;
+    padding: 0;
+    margin: 160px  auto auto 100px; 
+ }
+
+ .LogoForsideTekst2{
+    color: black; /*TEKST*/
+    font-size: 60px;
+    padding: 0;
+    margin: 10px  auto auto 100px;
+ }
+/*-------------CSS TIL STARTBILDE SLUTT----------------*/
+
+
+
+/*-------------CSS TIL "KORT OM OSS"-DEL START---------*/
+.KortOmOssOverskrift{
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    overflow: hidden;
+
+    text-align: center;
+    padding-left: 130px;
+    padding-right: 130px;
+    line-height: 2.5;
+    margin: 70px 50px;
+    font-size: 30px;
+}
+
+.KortOmOssTekst{
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    overflow: hidden;
+
+    text-align: center;
+    margin: 0 120px;
+    line-height: 2.5;
+    font-size: 20px;
+}
+/*-------------CSS TIL "KORT OM OSS"-DEL SLUTT---------*/
+
+
+/*NYHETER START*/
+.NyheterTekst{
+    grid-column: 1 / span 5;
+    grid-row: 4;
+    overflow: hidden;
+
+    text-align: center;
+    font-size: 40px;
+}
+/*NYHETER FERDIG*/
+
+
+/*--------NEWS SLDIESHOW TEST 1 START--------*/
+.Bildegalleri{
+    grid-column: 1 / span 5;
+    grid-row: 5;
+    overflow: hidden;
+}
+ 
+#slideshow {
+    overflow: hidden;
+    height: 70vh;
+    width: 98vw;
+  }
+  
+  .slide-wrapper {
+    width: 144vw;
+    animation:slide 5s ease infinite;
+    -webkit-animation: slide 10s ease infinite;
+  }
+  
+  .slide {
+    display: flexbox;
+    flex-direction: column;
+    margin: 0 2vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+    float: left;
+    height: 60vh;
+    width: 20vw;
+    background-color: #e9ecef;
+  }
+
+  .slide:hover{
+    box-shadow: 0 30px 30px 10px rgba(0,0,0,0.2);
+  }
+
+  .SlideBilde{
+    width: 18vw;
+    height: 25vh;
+    margin: 1vw 1vw 0 1vw;
+  }
+  
+  @keyframes slide {
+  95% {margin-left: -44vw;}
+  }
+
+ .NyhetLink{
+    margin: 3px 1vw;
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+ }
+
+ .NyhetDato{
+    margin: 7px 1vw 0 1vw;
+    font-size: 10px;
+ }
+
+ .SlideTekst{
+    margin: 6px 1vw auto 1vw;
+    color: black;
+    border: black;
+    line-height: 1.5;
+ }
+/*-------------NEWS SLIDESHOW TEST 1 SLUTT------------*/
+
+
+
+.InterressertTekst{
+    grid-column: 1 / span 5;
+    grid-row: 6;
+    overflow: hidden;
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.Boks1{
+    grid-column: 2;
+    grid-row: 7;
+    overflow: hidden;
+}
+
+.Boks2{
+    grid-column: 3;
+    grid-row: 7;
+    overflow: hidden;
+    
+ }
+
+.Boks3{
+    grid-column: 4;
+    grid-row: 7;
+    overflow: hidden;
+    
+}
+
+.Boks4{
+    grid-column: 2;
+    grid-row: 8;
+    overflow: hidden;
+    
+}
+
+.Boks5{
+    grid-column: 3;
+    grid-row: 8;
+    overflow: hidden;
+   
+}
+
+.Boks6{
+    grid-column: 4;
+    grid-row: 8;
+    overflow: hidden;
+}
+
+.BoksRad1{
+    display: flex;
+    flex-direction: column; 
+    margin: 60px 15px 20px 15px;
+    transition: 0.3s;
+    background-color: #e9ecef;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+.BoksRad2{
+    display: flex;
+    flex-direction: column; 
+    margin: 20px 15px 60px 15px;
+    transition: 0.3s;
+    background-color: #e9ecef;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+.BoksRad1:hover{
+    box-shadow: 0 30px 30px 10px rgba(0,0,0,0.2);
+    background-color: lightgray;
+    border-bottom: 3px solid green;
+}
+
+.BoksRad2:hover{
+    box-shadow: 0 30px 30px 10px rgba(0,0,0,0.2);
+    background-color: lightgray;
+    border-bottom: 3px solid green;
+}
+
+.BoksBilde{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+
+.BoksTekst{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    color: black;
+}
+
+/*-------------------FOOTER START--------------*/
+.Footer{
+    grid-column: 1 / span 5;
+    grid-row: 9;
+    overflow: hidden;
+
+ }
+ .FooterFlexbox{ /*Dette er hele boksen med fotter*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 3px;
+    color: black;
+    background-color:white;
+    opacity: 0.8; /* gjør omrpdet delvis gjennomsiktig*/
+    height: 70vh;
+    align-items: center;
+
+    /*tekst*/
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+ }
+
+ .FooterTekst{ /* venstre boks ("ta kontakt"-boksen)*/
+    display: flex;
+    padding: 30px;
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+    line-height: 4px; /* linjeavstand*/
+ }
+
+ .FooterTekst a{ 
+    color: black; /* endrer "hyperlink-fargen" til svart*/
+ }
+
+ .vertikalLinje{ /* linjene mellom infomasjonen i fotter*/
+    border-left: 2px solid black;
+    height: 200px;
+    position:absolute;
+    left: 50%; /* plasserer linjen i midten av boksen*/
+    }
+
+ .ikon{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+ }
+    /*-------------------FOOTER SLUTT--------------*/
+
+
