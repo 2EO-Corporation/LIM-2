@@ -32,42 +32,45 @@ video{
 /*  slutt på video header*/
 
 
-/* RANDOM NAVBAR*/
-#navbar {
+/*--------------CSS NAVBAR START--------------*/
+.HeaderGrid{
+    grid-column: 1 / span 5; 
+    grid-row: 1;
     overflow: hidden;
-    background-color: #333;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     position: sticky;
     top: 0;
-    top: 2px; /* Position the navbar at the top of the page */
-    width: 100vw; /* Full width */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.HeaderGrid ul { 
+    list-style-type: none; /* fjerner kulepunkt som er standard for lister*/
+    overflow: hidden; /* styrer hva som skjer med innhold som er for stort til å passe inn i et område. "hidden" forteller at innhold som ikke får plass i "boksen" blir skjult/klippet vekk*/
+}
+
+.HeaderGrid li { 
+    float: left; /* plasserer listen til venstre*/
+}
+  
+.HeaderGrid li a { /* css for hvert element "li" refirerer til listeelementene i listen*/
+    color: black;
+    text-align: center;
+    padding: 14px 16px; /* Top = 14px, bunn =16px */
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.HeaderGrid li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
+    background-color: grey;
     
 }
 
-nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+.test{
+    background-color: white;
 }
-  
-/* Links inside the navbar */
-#navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 24px;
-    text-decoration: none;
-    font-size: 25px;
-    position: sticky;
-}
-
-  
-/* Change background on mouse-over */
-#navbar a:hover {
-    background: #ddd;
-    color: black;
-}
- /*RANDOM NAVBAR SLUTTER*/
+/*-----------CSS TIL NAVBAR SLUTT-----------*/
  
 /*her kommer overskriften*/
 #overskrift{
@@ -140,7 +143,7 @@ nav {
     background-repeat : no-repeat;
     background-size : cover;
     background-position: center;
-    border: black 1px solid;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -153,7 +156,6 @@ nav {
 
 .informasjon-tekst{
     
-    border: black solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +177,6 @@ nav {
 
     padding: 3px;
     color: black;
-    background-color:#6c757d;
     opacity: 0.8; /* gjør området delvis gjennomsiktig*/
     height: 80vh;
     align-items: center;
