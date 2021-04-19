@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Om oss</title>
-    <link rel="stylesheet" href="OmOss.css">
+    <link rel="stylesheet" href="OmOss/OmOss.css">
+    <link rel="stylesheet" href="OmOss/MediaQ.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- linker til google icons, slik at vi kan fp ikoner på nettsiden-->
 
 </head>
@@ -15,21 +16,27 @@
             <h1> Om oss </h1>
         </div>
 
-        <nav>
-            <a href="index.html"><img src="bilder/logo transparent bg.png" alt="lim logo" width="100px"></a>
-            <ul>
-                <li><a href="OmOss.html">Om Oss</a></li>
-                <li><a href="idretter">Idretter</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-        
+        <!--HEADER START-->
+        <header class="HeaderGrid" id="myP"> <!--CLASSEN "GRID" ER KUN SÅ VI KAN SE LAYOUTEN PÅ GRIDSENE-->
+            <img src="css/bilder/legit/logo transparent bg.png" width="100px">
+            <nav>
+                <ul>
+                    <li><a class="active" href="idrett.html">Idretter</a></li>
+                    <li><a href="OmOss.html">Hvor du finner oss</a></li>
+                    <li><a href="OmOss.html">Om oss</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--HEADER SLUTT-->
 
         <!-- INTRODUKSJON-->
         <div id="intro">
-            <h3>  Lek - Idrett - Mat </h3>
-            <p> Mestring og motivasjon er to viktige verdier vi i LIM jobber for.<br> 
-                Vi har derfor skapt en sosial læringsplattform hvor barn kan utfolde seg sosialt gjennom lek og aktiviteter uten at dette skal komme på bekostning av skole. <br> </p>
+            <div class="tekst">
+                <h3>  Lek - Idrett - Mat </h3>
+                <p> Mestring og motivasjon er to viktige verdier vi i LIM jobber for.<br> 
+                    Vi har derfor skapt en sosial læringsplattform hvor barn kan utfolde seg sosialt gjennom lek og aktiviteter uten at dette skal komme på bekostning av skole. <br> </p>
+            </div>  
         </div>
         <!--- INTRODUKSJON SLUTT-->
 
@@ -47,44 +54,47 @@
 
 
         <!---HOVEDDEL 2-->
-        <div class="hoveddel-2"> <!--grå boks til venstre-->
-            <h2> Hva er bakgrunnen for LIM? </h2>
-            <div class="tekst-hoveddel-2"> <!--tekst i grå boks til venstre-->
-                <ul>
-                    <li> Mange flerspråklige faller utenfor, spesielt i et område med lav levekårsindeks. </li>
-                    <li> Elever med dårlig familieøkonomi skal ikke bli holdt utenfor idrettstilbud som kan koste mer enn man har råd til </li>
-                    <li> SFO opphører i 4. klasse og mange foreldre får en logistikkutfordring med å komme tidlig hjem fra arbeid</li>
-                    <li> Norge har en åpen økonomi og mange foreldre arbeider i næringer hvor internasjonal arbeidstid mer retter seg mot klokken 17.00</li>
-                    <li> Barns fysiske ferdigheter er ikke som før </li>
-                </ul>
-            </div> <!-- avslutter tekst-->
-        </div> <!--avslutter grå boks til venstre-->
+        <div id="hoveddel-2">
+            <div class="info-boks-2"> <!--grå boks til venstre-->
+                <h2> Hva er bakgrunnen for LIM? </h2>
+                <div class="tekst-hoveddel-2"> <!--tekst i grå boks til venstre-->
+                    <ul>
+                        <li> Mange flerspråklige faller utenfor, spesielt i et område med lav levekårsindeks. </li>
+                        <li> Elever med dårlig familieøkonomi skal ikke bli holdt utenfor idrettstilbud som kan koste mer enn man har råd til </li>
+                        <li> SFO opphører i 4. klasse og mange foreldre får en logistikkutfordring med å komme tidlig hjem fra arbeid</li>
+                        <li> Norge har en åpen økonomi og mange foreldre arbeider i næringer hvor internasjonal arbeidstid mer retter seg mot klokken 17.00</li>
+                        <li> Barns fysiske ferdigheter er ikke som før </li>
+                    </ul>
+                </div> <!-- avslutter tekst-->
+            </div> <!--avslutter grå boks til venstre-->
 
-        <div class="hoveddel-2-bilde"> <!--grå boks til høyre-->
-            <img src="bilder/fotball-barn.jpg" width="600px" alt="barn som spiller fotball"> <!--bilde-->
-        </div> <!--- avslutter grå bokst til høyre-->
+            <div class="hoveddel-2-bilde"> <!--grå boks til høyre-->
+                <img src="bilder/fotball-barn.jpg"  alt="barn som spiller fotball"> <!--bilde-->
+            </div> <!--- avslutter grå bokst til høyre-->
+        </div>
         <!--- AVSLUTTER HOVEDEL-2-->
         
         
         <!---HOVEDDEL 3-->
 
         <div class="hoveddel-3">
-            <h2> Vår Målsetning</h2>
-            <div class="tekst-hoveddel-3">
-                <ul>
-                    <li>Skape en sosial arena for fritidsaktiviteter for barn som kan være fattige på opplevelser </li>
-                    <li> Bygge bro mellom flerspråklige og etnisk norske </li>
-                    <li> Bidra til sunn og trygg oppvekst i nærmiljøet</li>
-                    <li> Gjennom lavterskel-tilbud tilrettelegge for elevene å prøve ut forskjellige idretter, og finne den eller de idretter man finner glede i å drive med.</li>
-                    <li> Utnytte idrettens anleggs-infrastruktur og bidra til bedre og større bruk av anlegg som har kostet store investeringer. (vi kan skape en mer massiv bruk av anleggene i tidsrommet 14.00 - 17.00)</li>
-                    <li> Bidra til at flerspråklige foreldre kommer mer i kontakt med idretten og det positive den står for (skolen har en bedre «standing» overfor flerspråklige foreldre enn Idretten) </li>
-                    <li> Skape bedre mestring og samspill mellom skole og Idretten – men aller viktigst mellom elevene.</li>
-                </ul>
+            <div class="info-boks-3">
+                <h2> Vår Målsetning</h2>
+                <div class="tekst-hoveddel-3">
+                    <ul>
+                        <li>Skape en sosial arena for fritidsaktiviteter for barn som kan være fattige på opplevelser </li>
+                        <li> Bygge bro mellom flerspråklige og etnisk norske </li>
+                        <li> Bidra til sunn og trygg oppvekst i nærmiljøet</li>
+                        <li> Gjennom lavterskel-tilbud tilrettelegge for elevene å prøve ut forskjellige idretter, og finne den eller de idretter man finner glede i å drive med.</li>
+                        <li> Utnytte idrettens anleggs-infrastruktur og bidra til bedre og større bruk av anlegg som har kostet store investeringer. (vi kan skape en mer massiv bruk av anleggene i tidsrommet 14.00 - 17.00)</li>
+                        <li> Bidra til at flerspråklige foreldre kommer mer i kontakt med idretten og det positive den står for (skolen har en bedre «standing» overfor flerspråklige foreldre enn Idretten) </li>
+                        <li> Skape bedre mestring og samspill mellom skole og Idretten – men aller viktigst mellom elevene.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
-        <div class="hoveddel-3-bilde">
-            <img src="bilder/high-five.jpg" width="600px" alt= "barn som gir high five til tilskuere">
+            <div class="hoveddel-3-bilde">
+                <img src="bilder/high-five.jpg"  alt= "barn som gir high five til tilskuere">
+            </div>
         </div>
 
          <!--FOOTER START-->

@@ -1,0 +1,234 @@
+/* ---------- HER KOMMER @MEdia Quaries -----*/
+/* Tilpasning for pc-skjerm*/
+@media only screen and (max-width: 5200px) {
+
+   
+    .header{
+        text-align: center;
+        background-color: grey;
+        height: 20vh;
+    }
+    
+    .HeaderGrid li {
+        padding: 16px 14px;
+        font-size: 20px;
+    }
+
+    #intro{
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+    .tekst{
+
+        width: 50vw;
+        border: solid black 3px;
+        overflow: hidden;
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+    
+        /*innhold*/
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    
+        /*tekst*/
+        text-align: center;
+        line-height: 1;
+        font-size: 18px;
+    }
+     /* ----HOVEDDEL ! ---*/
+    .hoveddel-1{
+       display: grid;
+      height: 70vh;
+
+        display: flex;
+    
+        margin-bottom: 100px;
+        width: 100vw;
+    
+        /* innhold*/
+        align-items: center;
+        justify-content: center;
+    
+        
+        /*bakgrunn*/
+        background-color: rgb(58, 57, 57);
+        background-image: url(bilder/barn-takker-for-kampen.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+    
+    
+    .tekst-hoveddel-1{ /* hvit overlay med tekst*/
+        display: flex;
+        margin: auto 0;
+        width: 600px;
+        padding: 50px;
+        line-height: 2;
+        border-radius: 5px;
+    
+        background-color: white;
+     
+    }
+    /* ----- BEgynner på del 2 ---*/
+
+    #hoveddel-2{
+      
+        width: 100vw;
+        border: 3px red solid;
+        overflow: hidden;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+   
+       
+       
+    }
+    
+    .info-boks-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
+     
+        border: blue solid 4px;
+
+        text-align: center;
+        grid-column: 1/ span 2;
+     
+
+        overflow: hidden;
+        
+    
+    }
+    
+    .tekst-hoveddel-2{ /* tekst flexbox (første "boks"). */
+       
+        margin: 80px;
+        padding: 20px;
+        text-align: start;
+
+        overflow: hidden;
+        line-height: 2;
+        border: black solid 2px;
+        text-decoration: none;   
+    }
+    
+    .hoveddel-2-bilde img { /* for å se bildet*/
+        
+        border: hotpink 2px solid;
+        width: 600px;
+    
+    }
+
+    .hoveddel-2-bilde /* boksen med bildet*/{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 3/ span 4;
+        
+    }
+    
+
+    /* ----- HOVEDDEL  ----*/
+    .hoveddel-3{
+        margin-top: 100px;
+        width: 100vw;
+        border: 3px red solid;
+        overflow: hidden;
+        height: 75vh;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        
+    }
+    .info-boks-3{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
+     
+        border: blue solid 4px;
+        text-align: center;
+        grid-column: 1/ span 2;
+        grid-row: 1/ span 4;
+
+        overflow: hidden;
+        
+    }
+    
+    .tekst-hoveddel-3{ /* tekst flexbox (første "boks"). */
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding: 10px;
+        text-align: start;
+
+        overflow: hidden;
+
+        line-height: 1.8;
+        border: black solid 2px;
+        text-decoration: none;    
+    }
+    
+    .hoveddel-3-bilde img{
+        border: hotpink 2px solid;
+       width: 600px;
+    }
+    .hoveddel-3-bilde{ /* bilde (andre "boks"*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 3/ span 4;
+        grid-row: 1/ span 4;
+    }
+}
+
+/* --------------- Tiplasset IPad -------------*/
+
+@media only screen and (max-width: 800px) {
+    
+   
+    .HeaderGrid li {
+        padding-top: 40px;
+        padding: 14px 16px; /* Top = 14px, bunn =16px */
+    }
+
+    .FooterTekst{ /* venstre boks ("ta kontakt"-boksen)*/
+        display: flex;
+        padding: 30px;
+        margin: auto 0;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.1; /* linjeavstand*/
+    }
+       
+}
+
+/*  ------------------Tiplasset tlf -------------*/
+@media only screen and (max-width: 580px) {
+   
+    
+
+    .HeaderGrid{
+        height: 13vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+    .HeaderGrid li a{
+        font-size: 18px;
+        padding: 5px 5px; /* Top = 14px, bunn =16px */
+       
+    }
+    .HeaderGrid img{
+        height: 13vh;
+    
+    }
+
+    .FooterTekst{ /* venstre boks ("ta kontakt"-boksen)*/
+        display: flex;
+        padding: 30px;
+        margin: auto 0;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1; /* linjeavstand*/
+    }
+}
+
