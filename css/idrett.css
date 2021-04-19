@@ -166,12 +166,14 @@ video{
 
 .knapp{
     color: black;
-  
     border-radius: 20%;
-
     text-align: center;
     border: rgb(220, 220, 220) 1px solid;
-   
+}
+.knapp a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
 }
 .knapp:hover{
     border: white 1px solid;
