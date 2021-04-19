@@ -54,16 +54,14 @@ video{
 .HeaderGrid li a { /* css for hvert element "li" refirerer til listeelementene i listen*/
     color: black;
     text-align: center;
-    
     text-decoration: none;
     font-size: 20px;
 }
   
-.HeaderGrid li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: rgb(244, 242, 242);
-  
+.HeaderGrid li :hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
+    border-bottom: black solid 1px;
 }
+
 
 .test{
     background-color: white;
