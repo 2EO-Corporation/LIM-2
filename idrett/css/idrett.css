@@ -63,8 +63,9 @@ video{
 }
   
 .HeaderGrid li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
-    background-color: grey;
-    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(244, 242, 242);
+  
 }
 
 .test{
@@ -160,7 +161,22 @@ video{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: rgb(162, 156, 156) 1px double;
     
+}
+
+.knapp{
+    color: black;
+    font-size: 20px;
+    border-radius: 20%;
+    width: 9vw;
+    text-align: center;
+    border: rgb(220, 220, 220) 1px solid;
+   
+}
+.knapp:hover{
+    border: white 1px solid;
+    box-shadow: 0 4px 40px 2px rgba(0,0,0,0.2);
 }
 
 /* ---- FOOTER BEGYNNER HER ----- */
