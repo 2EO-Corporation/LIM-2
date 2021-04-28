@@ -41,7 +41,7 @@
      /* ----HOVEDDEL ! ---*/
     .hoveddel-1{
        display: grid;
-      height: 70vh;
+       height: 70vh;
 
         display: flex;
     
@@ -81,24 +81,19 @@
         border: 3px red solid;
         overflow: hidden;
         height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-   
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
        
-       
+        
+
     }
     
     .info-boks-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
      
         border: blue solid 4px;
+        grid-column: 1/span 2;
+       
 
-        text-align: center;
-        grid-column: 1/ span 2;
-     
-
-        overflow: hidden;
-        
-    
     }
     
     .tekst-hoveddel-2{ /* tekst flexbox (første "boks"). */
@@ -106,17 +101,17 @@
         margin: 80px;
         padding: 20px;
         text-align: start;
-
         overflow: hidden;
         line-height: 2;
         border: black solid 2px;
         text-decoration: none;   
     }
     
-    .hoveddel-2-bilde img { /* for å se bildet*/
+    .del2-img { /* for å se bildet*/
         
         border: hotpink 2px solid;
-        width: 600px;
+        width: 40vw;
+        height: 50vh;
     
     }
 
@@ -159,18 +154,18 @@
         margin-right: 80px;
         padding: 10px;
         text-align: start;
-
         overflow: hidden;
-
         line-height: 1.8;
         border: black solid 2px;
         text-decoration: none;    
     }
     
-    .hoveddel-3-bilde img{
+    .del3-img{
         border: hotpink 2px solid;
-       width: 600px;
+        width: 40vw;
+        height: 50vh;
     }
+
     .hoveddel-3-bilde{ /* bilde (andre "boks"*/
         display: flex;
         justify-content: center;
@@ -197,6 +192,124 @@
         flex-direction: column;
         align-items: center;
         line-height: 1.1; /* linjeavstand*/
+    }
+
+    .tekst{
+
+        width: 50vw;
+        border: solid black 3px;
+        overflow: hidden;
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+    
+        /*innhold*/
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    
+        /*tekst*/
+        text-align: center;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+     
+    /* ----- BEgynner på del 2 ---*/
+
+    #hoveddel-2{
+      
+        width: 100vw;
+        border: 3px green solid;
+        overflow: hidden;
+        height: 100vh;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+        
+
+    }
+    
+    .info-boks-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
+     
+        border: lightblue solid 4px;
+        grid-column: 1/span 2;
+       
+
+    }
+    
+    .tekst-hoveddel-2{ /* tekst flexbox (første "boks"). */
+       
+        margin: 40px;
+        padding: 10px;
+        text-align: start;
+        overflow: hidden;
+        line-height: 2;
+        border: black solid 2px;
+        text-decoration: none;   
+    }
+    
+    .del2-img { /* for å se bildet*/
+        
+        border: yellow 2px solid;
+        width: 45vw;
+        height: 55vh;
+    
+    }
+
+    .hoveddel-2-bilde /* boksen med bildet*/{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 3/ span 4;
+        
+    }
+    
+
+    /* ----- HOVEDDEL  ----*/
+    .hoveddel-3{
+        margin-top: 100px;
+        margin-bottom: -100px;
+        width: 100vw;
+        border: 3px yellow solid;
+        overflow: hidden;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,1fr);
+        
+    }
+    .info-boks-3{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
+     
+        border: blue solid 4px;
+        text-align: center;
+        grid-column: 1/ span 4;
+        grid-row: 1/ span 4;
+        overflow: hidden;
+        
+    }
+    
+    .tekst-hoveddel-3{ /* tekst flexbox (første "boks"). */
+        margin: 40px;
+        padding: 10px;
+        text-align: start;
+        overflow: hidden;
+        line-height: 1.8;
+        border: black solid 2px;
+        text-decoration: none;    
+    }
+    
+    .del3-img{
+        border: green 2px solid;
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .hoveddel-3-bilde{ /* bilde (andre "boks"*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/ span 4;
+        grid-row: 5/span 6;
     }
        
 }
@@ -229,6 +342,104 @@
         flex-direction: column;
         align-items: center;
         line-height: 1; /* linjeavstand*/
+    }
+
+    /* ----- BEgynner på del 2 ---*/
+
+    #hoveddel-2{
+      
+        width: 100vw;
+        border: 3px red solid;
+        overflow: hidden;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+
+    }
+    
+    .info-boks-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
+     
+        border: lightblue solid 4px;
+        grid-column: 1/span 2;
+       
+
+    }
+    
+    .tekst-hoveddel-2{ /* tekst flexbox (første "boks"). */
+       
+        margin: 40px;
+        padding: 10px;
+        text-align: start;
+        overflow: hidden;
+        line-height: 2;
+        border: black solid 2px;
+        text-decoration: none;   
+    }
+    
+    .del2-img { /* for å se bildet*/
+        
+        border: purple 2px solid;
+        width: 45vw;
+        height: 55vh;
+    
+    }
+
+    .hoveddel-2-bilde /* boksen med bildet*/{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 3/ span 4;
+        
+    }
+    
+
+    /* ----- HOVEDDEL  ----*/
+    .hoveddel-3{
+        margin-top: 100px;
+        margin-bottom: -100px;
+        width: 100vw;
+        border: 3px green solid;
+        overflow: hidden;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,1fr);
+        
+    }
+    .info-boks-3{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
+     
+        border: blue solid 4px;
+        text-align: center;
+        grid-column: 1/ span 4;
+        grid-row: 1/ span 4;
+        overflow: hidden;
+        
+    }
+    
+    .tekst-hoveddel-3{ /* tekst flexbox (første "boks"). */
+        margin: 40px;
+        padding: 10px;
+        text-align: start;
+        overflow: hidden;
+        line-height: 1.8;
+        border: black solid 2px;
+        text-decoration: none;    
+    }
+    
+    .del3-img{
+        border: purple 2px solid;
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .hoveddel-3-bilde{ /* bilde (andre "boks"*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/ span 4;
+        grid-row: 5/span 6;
     }
 }
 

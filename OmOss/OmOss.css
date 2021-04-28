@@ -1,20 +1,10 @@
-/* =========== Grids ============*/
 
-/* fargekoder
-
-1) #6c757d
-2) #adb5bd
-3)ced4da
-
-*/
 
 html,body{ /* fjerner irriterende hvit kant på innhold*/
     padding: 0;
     margin: 0;
    
 }
-
-
 
 .header{
     border: red 2px solid;
@@ -122,13 +112,19 @@ html,body{ /* fjerner irriterende hvit kant på innhold*/
     text-decoration: none;   
 }
 
-.hoveddel-2-bilde{ /* bilde (andre "boks"*/
-    
-    background-color:grey;
-
+.hoveddel-2-bilde{ /* (andre "boks" for bilde*/
+    background-color:rgb(144, 56, 56);
     justify-content: center;
     align-items: center;
 }
+
+.del2-img /*selve bilde*/{
+        background-image: url(bilder/fotball-barn.jpg);
+        background-repeat : no-repeat;
+        background-size : cover;
+        background-position: center;
+    
+    }
 
 /* ======== DEl 3=======*/
 
@@ -146,14 +142,21 @@ html,body{ /* fjerner irriterende hvit kant på innhold*/
     text-decoration: none;   
 }
 
-.hoveddel-3-bilde{ /* bilde (andre "boks"*/
+.hoveddel-3-bilde{ /* (andre "boks" for bilde*/
     display: flex;
-
-
     background-color:grey;
     justify-content: center;
     align-items: center;
 }
+
+.del3-img /*bildet i boksen*/
+{
+    background-image: url(bilder/high-five.jpg);
+    background-repeat : no-repeat;
+        background-size : cover;
+        background-position: center;
+}
+
 
 /* ====== FOOTER ========*/
 .Footer{
