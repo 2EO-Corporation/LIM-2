@@ -54,7 +54,7 @@
     
         
         /*bakgrunn*/
-        background-color: rgb(58, 57, 57);
+       
         background-image: url(bilder/barn-takker-for-kampen.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -78,9 +78,9 @@
     #hoveddel-2{
       
         width: 100vw;
-        border: 3px red solid;
+   
         overflow: hidden;
-        height: 100vh;
+        height: 90vh;
        display: grid;
        grid-template-columns: repeat(4,1fr);
        
@@ -90,7 +90,7 @@
     
     .info-boks-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
      
-        border: blue solid 4px;
+   
         grid-column: 1/span 2;
        
 
@@ -109,9 +109,8 @@
     
     .del2-img { /* for å se bildet*/
         
-        border: hotpink 2px solid;
-        width: 40vw;
-        height: 50vh;
+        width: 42vw;
+        height: 60vh;
     
     }
 
@@ -129,9 +128,9 @@
     .hoveddel-3{
         margin-top: 100px;
         width: 100vw;
-        border: 3px red solid;
+      
         overflow: hidden;
-        height: 75vh;
+        height: 100vh;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
@@ -139,7 +138,7 @@
     }
     .info-boks-3{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
      
-        border: blue solid 4px;
+      
         text-align: center;
         grid-column: 1/ span 2;
         grid-row: 1/ span 4;
@@ -161,9 +160,9 @@
     }
     
     .del3-img{
-        border: hotpink 2px solid;
-        width: 40vw;
-        height: 50vh;
+  
+        width: 45vw;
+        height: 60vh;
     }
 
     .hoveddel-3-bilde{ /* bilde (andre "boks"*/
@@ -175,9 +174,29 @@
     }
 }
 
+@media only screen and (max-width: 1050px){
+
+    #hoveddel-2{
+   
+    }
+    .tekst-hoveddel-2{
+        margin: 40px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .hoveddel-3{
+        height: 90vh;
+    }
+    .tekst-hoveddel-3{
+        margin: 20px;
+    }
+}
+
+
 /* --------------- Tiplasset IPad -------------*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     
    
     .HeaderGrid li {
@@ -219,20 +238,22 @@
     #hoveddel-2{
       
         width: 100vw;
-        border: 3px green solid;
+  
         overflow: hidden;
-        height: 100vh;
+        height: 90vh;
        display: grid;
-       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(6, 1fr);
+       grid-template-columns: 10;
         
 
     }
     
     .info-boks-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
      
-        border: lightblue solid 4px;
-        grid-column: 1/span 2;
-       
+        
+       grid-row: 1/ span 4;
+       overflow: hidden;
+       grid-column: 10;
 
     }
     
@@ -249,9 +270,9 @@
     
     .del2-img { /* for å se bildet*/
         
-        border: yellow 2px solid;
-        width: 45vw;
-        height: 55vh;
+
+        width: 100vw;
+        height: 50vh;
     
     }
 
@@ -260,7 +281,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        grid-column: 3/ span 4;
+        grid-row: 5/span 6;
+        grid-column: 10;
+        overflow: hidden;
         
     }
     
@@ -270,7 +293,7 @@
         margin-top: 100px;
         margin-bottom: -100px;
         width: 100vw;
-        border: 3px yellow solid;
+    
         overflow: hidden;
         height: 100vh;
         display: grid;
@@ -280,7 +303,7 @@
     }
     .info-boks-3{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
      
-        border: blue solid 4px;
+      
         text-align: center;
         grid-column: 1/ span 4;
         grid-row: 1/ span 4;
@@ -299,9 +322,9 @@
     }
     
     .del3-img{
-        border: green 2px solid;
-        width: 80vw;
-        height: 30vh;
+     
+        width: 100vw;
+        height: 40vh;
     }
 
     .hoveddel-3-bilde{ /* bilde (andre "boks"*/
@@ -314,8 +337,31 @@
        
 }
 
+@media only screen and (max-width: 780px) {
+    .hoveddel-3{
+        height: 110vh;
+     
+    }
+
+    .del3-img{
+        height: 40vh;
+    }
+
+}
+
+@media only screen and (max-width: 712px) {
+    .hoveddel-3{
+        height: 120vh;
+      
+    }
+
+    .del3-img{
+        height: 40vh;
+    }
+}
+
 /*  ------------------Tiplasset tlf -------------*/
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 650px) {
    
     
 
@@ -348,20 +394,24 @@
 
     #hoveddel-2{
       
+        
+      
         width: 100vw;
-        border: 3px red solid;
         overflow: hidden;
         height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
+       display: grid;
+       grid-template-rows: repeat(6, 1fr);
+       grid-template-columns: 10;
+        
         
 
     }
     
     .info-boks-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
      
-        border: lightblue solid 4px;
-        grid-column: 1/span 2;
+        grid-row: 1/ span 4;
+       overflow: hidden;
+       grid-column: 10;
        
 
     }
@@ -379,18 +429,21 @@
     
     .del2-img { /* for å se bildet*/
         
-        border: purple 2px solid;
-        width: 45vw;
+     
+        width: 100vw;
         height: 55vh;
     
     }
 
     .hoveddel-2-bilde /* boksen med bildet*/{
         
+        
         display: flex;
         justify-content: center;
         align-items: center;
-        grid-column: 3/ span 4;
+        grid-row: 5/span 6;
+        grid-column: 10;
+        overflow: hidden;
         
     }
     
@@ -400,26 +453,24 @@
         margin-top: 100px;
         margin-bottom: -100px;
         width: 100vw;
-        border: 3px green solid;
+      
         overflow: hidden;
-        height: 100vh;
+        height: 120vh;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(6,1fr);
         
     }
     .info-boks-3{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
      
-        border: blue solid 4px;
+        
         text-align: center;
-        grid-column: 1/ span 4;
         grid-row: 1/ span 4;
         overflow: hidden;
         
     }
     
     .tekst-hoveddel-3{ /* tekst flexbox (første "boks"). */
-        margin: 40px;
+        margin: 20px;
         padding: 10px;
         text-align: start;
         overflow: hidden;
@@ -429,17 +480,30 @@
     }
     
     .del3-img{
-        border: purple 2px solid;
-        width: 80vw;
-        height: 30vh;
+        height: 40vh;
     }
 
     .hoveddel-3-bilde{ /* bilde (andre "boks"*/
         display: flex;
         justify-content: center;
         align-items: center;
-        grid-column: 1/ span 4;
         grid-row: 5/span 6;
     }
 }
 
+@media only screen and (max-width: 540px) {
+    .hoveddel-3{
+        height: 125vh;
+       
+    }
+
+    .del3-img{
+        height: 42vh;
+    }
+
+    #hoveddel-2{
+        
+        height: 115vh;
+    }
+
+}

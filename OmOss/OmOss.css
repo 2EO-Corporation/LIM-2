@@ -21,6 +21,7 @@ html,body{ /* fjerner irriterende hvit kant på innhold*/
     top: 0;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ 
 }
 .HeaderGrid ul { 
     list-style-type: none; /* fjerner kulepunkt som er standard for lister*/
@@ -81,8 +82,7 @@ html,body{ /* fjerner irriterende hvit kant på innhold*/
   
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(50%); /* legger på grått filter på bildet. gir bedre lesbarhet*/
-    opacity: 0.8; /* gjør bilde mindre tydelig.*/
+   
 }
 
 
@@ -100,10 +100,13 @@ html,body{ /* fjerner irriterende hvit kant på innhold*/
 /* ========== DEL- 2 hva er bakgrunnen for LIM ============*/ 
 /* delte innholdet inn i to grid bokser. Den ene med tekst og den andre med bilde. */
 
-.hoveddel-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
-
+#hoveddel-2{ /* grå bakgrunn til tekst (første "boks") måtte legge til en ekstra for at bakgrunnen skulle dekke hele lengden på siden*/
+ 
     text-align: center;
 
+}
+.info-boks-2{
+    border: black solid 2px;
 }
 
 .tekst-hoveddel-2{ /* tekst flexbox (første "boks"). */
@@ -113,7 +116,7 @@ html,body{ /* fjerner irriterende hvit kant på innhold*/
 }
 
 .hoveddel-2-bilde{ /* (andre "boks" for bilde*/
-    background-color:rgb(144, 56, 56);
+    border: black solid 2px;
     justify-content: center;
     align-items: center;
 }
@@ -129,22 +132,22 @@ html,body{ /* fjerner irriterende hvit kant på innhold*/
 /* ======== DEl 3=======*/
 
 .hoveddel-3{
-
+    border: black solid 2px;
     text-align: center;
+   
 }
 
 .tekst-hoveddel-3{ /* tekst flexbox (første "boks"). */
    
    
     text-align: start;
-
     border: black solid 2px;
     text-decoration: none;   
 }
 
 .hoveddel-3-bilde{ /* (andre "boks" for bilde*/
     display: flex;
-    background-color:grey;
+    border: black solid 2px;
     justify-content: center;
     align-items: center;
 }
